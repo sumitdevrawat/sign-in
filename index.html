@@ -5,13 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+ 
+    .atm-card {
+      width: 350px;
+      height: 200px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+      position: relative;
+    }
+
+    .atm-card .bank-name {
+      text-align: right;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .atm-card .chip {
+      width: 50px;
+      height: 35px;
+      background: linear-gradient(135deg, #d4af37, #b8860b);
+      border-radius: 5px;
+      margin-top: 25px;
+    }
+
+    .atm-card .card-number {
+      margin-top: 25px;
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+
+    .atm-card .card-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .atm-card .card-holder {
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .atm-card .valid-date {
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .atm-card .brand-logo {
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #ffcc00;
+    }
+</style>
 <body>
-     <h2>Sign In</h2>
-    <form action="login.php" method="POST">
-      <input type="text" name="username" placeholder="Enter Username" required>
-      <input type="password" name="password" placeholder="Enter Password" required>
-      <input type="submit" value="Sign In">
-      <p>Don’t have an account? <a href="#">Sign Up</a></p>
-    </form>
+   <!-- <p id="demo">hello sumit</p>
+   <button id="btn">click me</button> -->
+
+   <form>
+    <input type="text" id="fname" placeholder="First Name"><br>
+    <input type="text" placeholder="Last Name"><br>
+    <input type="text" placeholder="Email"><br>
+    <input type="password" placeholder="Password"><br>
+    <button >sign in</button>
+
+
+   </form>
+
+    <div class="atm-card">
+    <div class="bank-name">HDFC BANK</div>
+    <div class="chip"></div>
+    <div class="card-number">1234 5678 9012 3456</div>
+    <div class="card-details">
+      <div class="card-holder">
+        <span>Card Holder</span><br>
+        <strong>DEVENDER KUMAR</strong>
+      </div>
+      <div class="valid-date">
+        <span>Valid Thru</span><br>
+        <strong>12/28</strong>
+      </div>
+    </div>
+    <div class="brand-logo">VISA</div>
+  </div>
 </body>
+<script>
+  // let change=document.getElementById("demo");
+  // change.innerHTML="hii devender";
+
+  // let createtag=document.createElement("h1");
+  // let write=document.createTextNode ("hello anubav");
+  // createtag.appendChild(write);
+  // document.body.appendChild(createtag);
+
+
+// let bttn=document.getElementById("btn");
+
+// bttn.addEventListener("click",function(){
+
+//   let tag=document.createElement("h2");
+//   let text=document.createTextNode("good morning ji");
+//   tag.appendChild(text);
+//   document.body.appendChild(tag);
+// });
+
+// function btn(){
+//   let tag=document.createElement("h2");
+//   let text=document.createTextNode("good morning ji");
+//   tag.appendChild(text);
+//   document.body.appendChild(tag);
+// }
+
+let blk=document.getElementById("fname").style.display = "none";
+
+ 
+</script>
 </html>
